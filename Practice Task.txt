@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I'm JavaScript!');
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+
+// Answer: I found ' instead of ".., so correct answer is: alert("I'm JavaScript!")
+====================================
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
+
+scripts.js
+
+alert("I’m invoked!");
+
+// Answer: js file name typo found "scripts.js" instead of "script.js"
+====================================
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working
+
+//answer: 
+1st alert message: alert("I'm JavaScript!");
+2nd alert('Hello') // without semicolan working fine
+3rd alert(`Wor
+ ld`) // we using this `. So, till end same `. consider and displaying in alert.
+4th: alert(3 +
+1
++ 2) //this arithmatic operator using so, adding numbers so result is 6 in allert message.
+===================================================
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
+script.js
+
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+lname;
+alert( 'hello ${name}' );
+
+//Answer: we can use ` instead of ' like : alert( `hello ${name}` );
+o/p: Guvigeek
+================================
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
+script.js
+
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(a + b);
+
+//answer: 
+1. The prompt() method displays a dialog box that prompts the user for input. that Parameter A string. So, if a =5, then b = 5,. Output : 55.
+2 . If we want add number means, we can use "parseInt" like below
+let a = parseInt(prompt("First number?"));
+let b = parseInt(prompt("Second number?"));
+alert(a + b);
+================================
+If you run the below scritpt you will get “Code is Blasted”
+
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”.
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+var a = "2" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+//Answer: a variable is String . so code is Blasted.
+if a is number means. Diffused (var a = 2 > 12;)
+=========================================
+
+How to get the correct score in console.
+
+let value = prompt('How many runs you scored in this ball');
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+//Answer: let value = paseInt(prompt('How many runs you scored in this ball'));
+Input: 6
+Output: You hit a Six
+=========================
+Fix the code to welcome the Employee
+
+let login = 'Employee';
+let message = (login == 'Employee') ? :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+Answer:
+let login = 'Employee';
+let message = (login == 'Employee') ? 'Employee':
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+o/p: Employee
+============================
+
+Fix the code to welcome the boss
+
+let message;
+if (null || 2 || undefined )
+{
+ let message = "welcome boss";
+}
+else
+{
+ let message = "Go away";
+}
+  console.log(message);
+
+Ans:
+let message;
+if (null || 2 || undefined )
+{
+ message = "welcome boss";
+}
+else
+{
+ message = "Go away";
+}
+  console.log(message);
+
+o/p: welcome boss
+==========================
+Change the code to print
+
+3
+
+2
+
+1
+
+let i = 3;
+while (i) {
+  console.log( --i );
+}
+
+
+//Ans:
+let i = 3;
+i=i+1;
+while (i>1) {
+  console.log(--i);
+}
+
+====================
+Change the code to print even numbers
+
+for (let num = 2; num <= 20; num += 1) {
+  console.log(num)
+}
+
+//Ans:
+for (let num = 2; num <= 20; num += 1) {
+    if(num%2 === 0)
+    console.log(num)
+  }
+===================================
+Change the code to print all the gifts
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log('Wrapped ${'gifts[i]'} and added a bow!');
+}
+
+//Ans:
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+===================================
+Write a code to print the numbers in the array
+Output: 1234567891011
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = ' ';
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+===================================
+Write a code to print the numbers in the array
+
+Output: 1,2,3,4,5,6,7,8,9,10,11
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = " ";
+new_string +=numsArr[0]
+for (var i = 1; i < 11; i++) {
+    new_string += "," +numsArr[i] 
+   }
+   console.log(new_string);
+======================================
+Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+
+Output: 11 10 9 8 7 6 5 4 3 2 1
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = " ";
+
+for (var i = 10; i >= 0; i-- ) {
+ new_string += " "+numsArr[i]
+}
+console.log(new_string);
+======================================
+Write a code to add all the numbers in the array
+
+Output: 66
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <=10; i++) {
+ 
+ sum += numsArr[i]
+}
+console.log(sum);
+======================================
+Write a code to add the even numbers only
+Output: 30
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <10; i++) {
+ if(numsArr[i]%2==0)
+ sum += numsArr[i]
+}
+console.log(sum)
+======================================
+Fix the code to get the largest of three.
+
+aa = (f,s,t) => {
+ console.log(f,s,t);
+ if(f>s &&f>t){
+ console.log(f)}
+ else if(s>f && s>t){
+ console.log(s)}
+ else{
+ console.log(t)}
+}
+aa(1,2,3);
+======================================
+Fix the code to Sum of the digits present in the number
+
+let n = "123";
+console.log(add(n));
+function add(n)
+{
+let sum = 0;
+for(var i=0;i<n.length;i++){
+ sum+= parseInt(n[i])
+
+ }
+ return sum;
+}
+======================================
+Fix the code to gen Title caps.
+
+var arr = ["guvi", "geek", "zen", "fullstack"];
+var ano = function() {
+    
+ for (var i = 0; i <= arr.length; i++) {
+ console.log(arr[i][0].toUpperCase() + arr[i].substring(1));
+ }
+}
+ano();
+
+
+
